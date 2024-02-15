@@ -1,5 +1,5 @@
 
-## Momofy PHP JS SDK 
+## Momofy PHP SDK 
 
 Officially supported momofy package for PHP applications.
 
