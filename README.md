@@ -125,5 +125,5 @@ Verify your transaction by providing the transaction ref ID.
 
 ## Feedback
 
-If you have any feedback, please reach out to us at momofyapp@gmail.com
+If you have any feedback, Feel free to open an issue
 
