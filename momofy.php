@@ -41,8 +41,8 @@ class MomofyClient implements IMomofyClient
                 "phoneNumber" => $customer->phoneNumber
             ),
             "provider" => $provider,
-            "referenceCode" => $referenceCode,
-            "transactionNote" => $transactionNote
+            "reference_code" => $referenceCode,
+            "transaction_note" => $transactionNote
         );
 
         $data_string = json_encode($data);
