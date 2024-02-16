@@ -30,7 +30,7 @@ class MomofyClient implements IMomofyClient
     public function requestPayment($amount, $channel, $currency, $customer, $provider, $referenceCode, $transactionNote)
     {
 
-        $url = "https://sandbox.momofy.com/transactions/request";
+        $url = "https://api.momofy.com/transactions/request";
         $data = array(
             "amount" => $amount,
             "channel" => $channel,
@@ -66,7 +66,7 @@ class MomofyClient implements IMomofyClient
 
     public function verifyTransaction($transactionReference)
     {
-        $url = "https://sandbox.momofy.com/transactions/verify/" . $transactionReference;
+        $url = "https://api.momofy.com/transactions/verify/" . $transactionReference;
         $ch = curl_init($url);
         curl_setopt($ch, CURLOPT_CUSTOMREQUEST, "GET");
         curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
@@ -80,7 +80,7 @@ class MomofyClient implements IMomofyClient
 
     public function listTransactions($page = 0, $size = 100)
     {
-        $url = "https://sandbox.momofy.com/transactions?page=" . $page . "&size=" . $size;
+        $url = "https://api.momofy.com/transactions?page=" . $page . "&size=" . $size;
         $ch = curl_init($url);
         curl_setopt($ch, CURLOPT_CUSTOMREQUEST, "GET");
         curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
