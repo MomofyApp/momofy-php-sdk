@@ -1,0 +1,20 @@
+{
+    "name": "momofy/momofy",
+    "description": "Momofy API integrates all supported mobile money gateway providers. Giving businesses an easy way to integrate payment systems into their applications.",
+    "type": "library",
+    "license": "MIT",
+    "autoload": {
+        "psr-4": {
+            "Momofy\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "bundana"
+        }
+    ],
+    "require": {
+      "ext-curl": "*",
+        "ext-json": "*"
+    }
+}
